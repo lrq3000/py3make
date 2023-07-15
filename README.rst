@@ -12,9 +12,9 @@ Bring basic ``Makefile`` support to any system with Python.
 
 Simply install with ``pip install py3make`` then execute ``py3make`` in a directory containing a ``Makefile``.
 
-``pymake`` works on any platform (Linux, Windows, Mac, FreeBSD, Solaris/SunOS).
+``py3make`` works on any platform (Linux, Windows, Mac, FreeBSD, Solaris/SunOS).
 
-``pymake`` does not require any library to run, just a vanilla Python
+``py3make`` does not require any library to run, just a vanilla Python
 interpreter will do.
 
 The goal is not to reproduce a whole implementation of ``GNU make``, but only a very fast and succinct
@@ -77,7 +77,7 @@ For compatibility, ensure:
 1. Every alias is preceded by @[+]make (eg: @make alias)
 2. A maximum of one @make alias or command per line
 
-Sample makefile compatible with ``pymake``:
+Sample makefile compatible with ``py3make``:
 
 .. code:: sh
 
@@ -108,11 +108,11 @@ If you get a "Permission Denied" error, please check if maybe your antivirus may
 Documentation
 -------------
 
-|PyPI-Versions| |README-Hits| (Since 28 Oct 2016)
+|PyPI-Versions|
 
 .. code:: sh
 
-    pymake --help
+    py3make --help
 
 
 Contributions
@@ -140,8 +140,8 @@ Authors
 The main developers, ranked by surviving lines of code
 (`git fame -wMC <https://github.com/casperdcl/git-fame>`__), are:
 
-- Stephen Karl Larroque (`lrq3000 <https://github.com/lrq3000>`__, core logic & maintenance)
-- Casper da Costa-Luis (`casperdcl <https://github.com/casperdcl>`__, modularization & self-referential aliases & ironing out edge cases)
+- Stephen Karl Larroque (`lrq3000 <https://github.com/lrq3000>`__, core logic & maintenance Py3)
+- Casper da Costa-Luis (`casperdcl <https://github.com/casperdcl>`__, modularization & self-referential aliases & ironing out edge cases & documentation)
 
 We are grateful for all |GitHub-Contributions|!
 
