@@ -1,7 +1,7 @@
 py3make
 =======
 
-|PyPI-Status| |PyPI-Versions|
+|PyPI-Status| |PyPI-Versions| |PyPI-Downloads|
 
 |Build-Status| |Coverage-Status| |Branch-Coverage-Status| |Codacy-Grade| |Libraries-Rank|
 
@@ -177,6 +177,8 @@ We are grateful for all |GitHub-Contributions|!
 .. |PyPI-Downloads| image:: https://img.shields.io/pypi/dm/py3make.svg?label=pypi%20downloads&logo=python&logoColor=white
    :target: https://pypi.org/project/py3make
 .. |PyPI-Versions| image:: https://img.shields.io/pypi/pyversions/py3make.svg?logo=python&logoColor=white
+   :target: https://pypi.org/project/py3make
+.. |PyPI-Downloads| image:: https://img.shields.io/pypi/dm/py3make.svg?label=pypi%20downloads&logo=python&logoColor=white
    :target: https://pypi.org/project/py3make
 .. |Libraries-Rank| image:: https://img.shields.io/librariesio/sourcerank/pypi/py3make.svg?logo=koding&logoColor=white
    :target: https://libraries.io/pypi/py3make
