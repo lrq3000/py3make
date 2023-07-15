@@ -3,14 +3,14 @@ Unless otherwise stated, all authors (see commit logs) retain copyright
 for their respective work, and release the work under the MIT licence.
 
 Exceptions or notable authors are listed below
-in reverse chronological order:
+in chronological order:
 
-* lines of code last modified by Casper da Costa-Luis:
-  MPLv2.0 2016-2019 (c) Casper da Costa-Luis
-  [casperdcl](https://github.com/casperdcl).
 * lines of code last modified by Stephen Karl Larroque:
   MIT 2015-2023 (c) Stephen Karl Larroque
   [LRQ3000](https://github.com/LRQ3000).
+* lines of code last modified by Casper da Costa-Luis:
+  MPLv2.0 2016-2019 (c) Casper da Costa-Luis
+  [casperdcl](https://github.com/casperdcl).
 
 Note: the git history does not reflect the true last author of each LOC,
 instead, look at the https://github.com/tqdm/tqdm history.
