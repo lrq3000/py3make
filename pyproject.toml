@@ -21,7 +21,7 @@ license = {text = "Mozilla Public License 2.0"} # { file = "LICENSE" }
 keywords = ["make", "makefile", "gnumake", "gnu", "console", "terminal", "cli", "py3make", "pymake", "py-make"]
 classifiers = [
     'Development Status :: 5 - Production/Stable',
-    'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
+    'License :: OSI Approved :: MIT License',
     'Environment :: Console',
 	'Operating System :: MacOS :: MacOS X',
 	'Operating System :: Microsoft :: Windows',
