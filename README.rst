@@ -22,7 +22,7 @@ commands runner. This is often used to ease running tests and deployments locall
 a continuous integration/continuous deployment system such as GitHub Workflows.
 
 Do not be fooled by the lack of updates: this module is very stable and is very frequently (daily) used
-in most of [my Python projects](https://github.com/lrq3000?tab=repositories&q=&type=&language=python&sort=).
+in most of `my Python projects <https://github.com/lrq3000?tab=repositories&q=&type=&language=python&sort=>`__.
 
 This repository is a "fork" by the original author to regain full editing permissions stolen by a co-author,
 to update this package with full freedom.
