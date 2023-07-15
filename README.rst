@@ -150,9 +150,9 @@ We are grateful for all |GitHub-Contributions|!
 
 .. |Build-Status| image:: https://github.com/lrq3000/py3make/actions/workflows/ci-build.yml/badge.svg?event=push
     :target: https://github.com/lrq3000/py3make/actions/workflows/ci-build.yml
-.. |Coverage-Status| image:: https://coveralls.io/repos/lrq3000/py3make/badge.svg?branch=master
-   :target: https://coveralls.io/github/lrq3000/py3make
-.. |Branch-Coverage-Status| image:: https://codecov.io/gh/lrq3000/py3make/branch/master/graph/badge.svg
+.. |Coverage-Status| image:: https://coveralls.io/repos/github/lrq3000/py3make/badge.svg?branch=main
+   :target: https://coveralls.io/github/lrq3000/py3make?branch=main
+.. |Branch-Coverage-Status| image:: https://codecov.io/gh/lrq3000/py3make/branch/main/graph/badge.svg?token=JCKB7CEBCC 
    :target: https://codecov.io/gh/lrq3000/py3make
 .. |Codacy-Grade| image:: https://app.codacy.com/project/badge/Grade/64b870375f664419b5f2a0a956006db7
    :target: https://app.codacy.com/gh/lrq3000/py3make/dashboard
