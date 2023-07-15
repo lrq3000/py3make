@@ -94,7 +94,7 @@ py3make = "py3make._main:main"
 
 [tool.setuptools.packages.find]
 # IMPORTANT: systematically delete `src/<project.name>.egg-info` folder before rebuilding, otherwise the list of included files will not get updated (it's in `SOURCES.txt` file in this folder)
-where = ["."]
+where = ["src"]
 include = ["py3make*"]
 #namespaces = true  # already the default
 
@@ -128,7 +128,7 @@ include = [
     ]
 
 [tool.coverage.paths]
-source = ["py3make"]
+source = ["src/py3make"]
 
 [tool.coverage.report]  # Beware: you need to delete .coveragerc if you have one, otherwise .coveragerc will take precedence!
 show_missing = true
