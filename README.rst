@@ -5,7 +5,7 @@ py3make
 
 |Build-Status| |Coverage-Status| |Branch-Coverage-Status| |Codacy-Grade| |Libraries-Rank|
 
-|DOI-URI| |LICENCE| |OpenHub-Status|
+|LICENCE|
 
 
 Bring basic ``Makefile`` support to any system with Python.
@@ -118,7 +118,7 @@ Documentation
 Contributions
 -------------
 
-|GitHub-Commits| |GitHub-Issues| |GitHub-PRs| |OpenHub-Status|
+|GitHub-Commits| |GitHub-Issues| |GitHub-PRs|
 
 All source code is hosted on `GitHub <https://github.com/lrq3000/py3make>`__.
 Contributions are welcome.
@@ -132,8 +132,6 @@ LICENCE
 -------
 
 Open Source (OSI approved): |LICENCE|
-
-Citation information: |DOI-URI|
 
 
 Authors
@@ -181,9 +179,5 @@ We are grateful for all |GitHub-Contributions|!
    :target: https://libraries.io/pypi/py3make
 .. |Libraries-Dependents| image:: https://img.shields.io/librariesio/dependent-repos/pypi/py3make.svg?logo=koding&logoColor=white
     :target: https://github.com/lrq3000/py3make/network/dependents
-.. |OpenHub-Status| image:: https://www.openhub.net/p/lrq3000_py3make/widgets/project_thin_badge?format=gif
-   :target: https://www.openhub.net/p/lrq3000_py3make?ref=Thin+badge
 .. |LICENCE| image:: https://img.shields.io/pypi/l/py3make.svg
    :target: https://raw.githubusercontent.com/lrq3000/py3make/master/LICENCE
-.. |DOI-URI| image:: https://img.shields.io/badge/DOI-10.5281/zenodo.2546871-blue.svg
-   :target: https://doi.org/10.5281/zenodo.2546871
