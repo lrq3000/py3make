@@ -41,7 +41,7 @@ Latest PyPI stable release
 
 .. code:: sh
 
-    pip install py-make
+    pip install py3make
 
 Latest development release on GitHub
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -171,19 +171,19 @@ We are grateful for all |GitHub-Contributions|!
    :target: https://github.com/lrq3000/py3make/graphs/contributors
 .. |GitHub-Updated| image:: https://img.shields.io/github/last-commit/lrq3000/py3make/master.svg?logo=github&logoColor=white&label=pushed
    :target: https://github.com/lrq3000/py3make/pulse
-.. |PyPI-Status| image:: https://img.shields.io/pypi/v/py-make.svg
-   :target: https://pypi.org/project/py-make
-.. |PyPI-Downloads| image:: https://img.shields.io/pypi/dm/py-make.svg?label=pypi%20downloads&logo=python&logoColor=white
-   :target: https://pypi.org/project/py-make
-.. |PyPI-Versions| image:: https://img.shields.io/pypi/pyversions/py-make.svg?logo=python&logoColor=white
-   :target: https://pypi.org/project/py-make
-.. |Libraries-Rank| image:: https://img.shields.io/librariesio/sourcerank/pypi/py-make.svg?logo=koding&logoColor=white
-   :target: https://libraries.io/pypi/py-make
-.. |Libraries-Dependents| image:: https://img.shields.io/librariesio/dependent-repos/pypi/py-make.svg?logo=koding&logoColor=white
+.. |PyPI-Status| image:: https://img.shields.io/pypi/v/py3make.svg
+   :target: https://pypi.org/project/py3make
+.. |PyPI-Downloads| image:: https://img.shields.io/pypi/dm/py3make.svg?label=pypi%20downloads&logo=python&logoColor=white
+   :target: https://pypi.org/project/py3make
+.. |PyPI-Versions| image:: https://img.shields.io/pypi/pyversions/py3make.svg?logo=python&logoColor=white
+   :target: https://pypi.org/project/py3make
+.. |Libraries-Rank| image:: https://img.shields.io/librariesio/sourcerank/pypi/py3make.svg?logo=koding&logoColor=white
+   :target: https://libraries.io/pypi/py3make
+.. |Libraries-Dependents| image:: https://img.shields.io/librariesio/dependent-repos/pypi/py3make.svg?logo=koding&logoColor=white
     :target: https://github.com/lrq3000/py3make/network/dependents
-.. |OpenHub-Status| image:: https://www.openhub.net/p/tqdm_py-make/widgets/project_thin_badge?format=gif
-   :target: https://www.openhub.net/p/tqdm_py-make?ref=Thin+badge
-.. |LICENCE| image:: https://img.shields.io/pypi/l/py-make.svg
+.. |OpenHub-Status| image:: https://www.openhub.net/p/lrq3000_py3make/widgets/project_thin_badge?format=gif
+   :target: https://www.openhub.net/p/lrq3000_py3make?ref=Thin+badge
+.. |LICENCE| image:: https://img.shields.io/pypi/l/py3make.svg
    :target: https://raw.githubusercontent.com/lrq3000/py3make/master/LICENCE
 .. |DOI-URI| image:: https://img.shields.io/badge/DOI-10.5281/zenodo.2546871-blue.svg
    :target: https://doi.org/10.5281/zenodo.2546871
