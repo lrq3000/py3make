@@ -182,5 +182,7 @@ We are grateful for all |GitHub-Contributions|!
    :target: https://libraries.io/pypi/py3make
 .. |Libraries-Dependents| image:: https://img.shields.io/librariesio/dependent-repos/pypi/py3make.svg?logo=koding&logoColor=white
     :target: https://github.com/lrq3000/py3make/network/dependents
-.. |LICENCE| image:: https://img.shields.io/pypi/l/py3make.svg
+.. |LICENCE| image:: https://img.shields.io/badge/License-MIT-yellow.svg
+   :target: https://opensource.org/licenses/MIT
+.. |LICENCEAUTO| image:: https://img.shields.io/pypi/l/py3make.svg
    :target: https://raw.githubusercontent.com/lrq3000/py3make/master/LICENCE
