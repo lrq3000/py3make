@@ -1,6 +1,6 @@
-`py-make` is a product of collaborative work.
+`py3make` is a product of collaborative work.
 Unless otherwise stated, all authors (see commit logs) retain copyright
-for their respective work, and release the work under the MPLv2.0 licence.
+for their respective work, and release the work under the MIT licence.
 
 Exceptions or notable authors are listed below
 in reverse chronological order:
@@ -15,15 +15,7 @@ in reverse chronological order:
 Note: the git history does not reflect the true last author of each LOC,
 instead, look at the https://github.com/tqdm/tqdm history.
 
-Mozilla Public Licence (MPL) v. 2.0 - Exhibit A
------------------------------------------------
-
-This Source Code Form is subject to the terms of the
-Mozilla Public License, v. 2.0.
-If a copy of the MPL was not distributed with this file,
-You can obtain one at https://mozilla.org/MPL/2.0/.
-
-MIT License - Exhibit B
+MIT License - Exhibit A
 -----------------------
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -42,3 +34,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Mozilla Public Licence (MPL) v. 2.0 - Exhibit B
+-----------------------------------------------
+
+This Source Code Form is subject to the terms of the
+Mozilla Public License, v. 2.0.
+If a copy of the MPL was not distributed with this file,
+You can obtain one at https://mozilla.org/MPL/2.0/.
