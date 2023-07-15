@@ -53,63 +53,85 @@ flake8:
 test:
 	tox --skip-missing-interpreters
 
-testnose:
-	nosetests pymake -d -v
+testpyproject:
+	validate-pyproject pyproject.toml -v
 
-testsetup:
-	python setup.py check --metadata --restructuredtext --strict
-	python setup.py make none
+testsetuppost:
+	twine check "dist/*"
+
+testrst:
+	rstcheck README.rst
 
 testcoverage:
-	@make coverclean
-	nosetests pymake --with-coverage --cover-package=pymake --cover-erase --cover-min-percentage=80 -d -v
+	# This is the preferred way to run the tests since Python 3.10
+	@+make coverclean
+	pip install -e . --upgrade
+	# Run the tests
+	# With PyTest, it is now necessary to first install the python module so that it is found (--cov=<module>)
+	coverage run --branch -m pytest -v
+	coverage report -m
 
-testtimer:
-	nosetests pymake --with-timer -d -v
+testcoveragexdist:
+	# This parallelizes tests to make them run faster, thanks to pytest-xdist
+	@+make coverclean
+	@+make installdevpep517
+	# Run the tests
+	# With PyTest, it is now necessary to first install the python module so that it is found (--cov=<module>)
+	coverage run --branch -m pytest -n auto -v
+	#coverage report -m  # cannot send a report from parallelized xdist
 
 distclean:
 	@+make coverclean
 	@+make prebuildclean
 	@+make clean
+	@+make toxclean
 prebuildclean:
 	@+python -c "import shutil; shutil.rmtree('build', True)"
 	@+python -c "import shutil; shutil.rmtree('dist', True)"
-	@+python -c "import shutil; shutil.rmtree('pymake.egg-info', True)"
+	@+python -c "import shutil; shutil.rmtree('py3make.egg-info', True)"
+    # IMPORTANT: systematically delete `src/<project.name>.egg-info` folder before rebuilding, otherwise the list of included files will not get updated (it's in `SOURCES.txt` file in this folder)
+    # also very important to delete egg-info before any new build or pip install, otherwise may cause an error that multiple egg-info folders are present
+	@+python -c "import shutil; shutil.rmtree('src/py3make.egg-info', True)"
 coverclean:
 	@+python -c "import os; os.remove('.coverage') if os.path.exists('.coverage') else None"
-	@+python -c "import shutil; shutil.rmtree('pymake/__pycache__', True)"
-	@+python -c "import shutil; shutil.rmtree('pymake/tests/__pycache__', True)"
+	@+python -c "import shutil; shutil.rmtree('__pycache__', True)"
+	@+python -c "import shutil; shutil.rmtree('tests/__pycache__', True)"
 clean:
 	@+python -c "import os, glob; [os.remove(i) for i in glob.glob('*.py[co]')]"
-	@+python -c "import os, glob; [os.remove(i) for i in glob.glob('pymake/*.py[co]')]"
-	@+python -c "import os, glob; [os.remove(i) for i in glob.glob('pymake/tests/*.py[co]')]"
-	@+python -c "import os, glob; [os.remove(i) for i in glob.glob('pymake/examples/*.py[co]')]"
+	@+python -c "import os, glob; [os.remove(i) for i in glob.glob('tests/*.py[co]')]"
 toxclean:
 	@+python -c "import shutil; shutil.rmtree('.tox', True)"
 
-
 installdev:
-	python setup.py develop --uninstall
-	python setup.py develop
+	@+make prebuildclean
+	@+python -m pip install --upgrade --editable .[test] --verbose --use-pep517
 
 install:
-	python setup.py install
+	@+make prebuildclean
+	@+python -m pip install --upgrade . --verbose --use-pep517
+
+bandit:
+    bandit py3make/*
 
 build:
-	@make prebuildclean
-	@make testsetup
-	python setup.py sdist bdist_wheel
-	# python setup.py bdist_wininst
+	# requires `pip install build`
+	@+make testrst
+	@+make prebuildclean
+	#@+make testsetup
+	@+make testpyproject
+	# For build, do NOT use the -w flag, otherwise only the wheel will be built, but we need sdist for source distros such as Debian and Gentoo!
+	@+python -sBm build
+	@+make testsetuppost
 
-pypi:
+upload:
 	twine upload dist/*
 
 buildupload:
-	@make build
-	@make pypi
+	@+make build
+	@+make pypi
 
 none:
 	# used for unit testing
 
 run:
-	python -Om pymake
+	python -Om py3make
