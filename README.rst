@@ -151,8 +151,8 @@ We are grateful for all |GitHub-Contributions|!
    :target: https://coveralls.io/github/lrq3000/py3make
 .. |Branch-Coverage-Status| image:: https://codecov.io/gh/lrq3000/py3make/branch/master/graph/badge.svg
    :target: https://codecov.io/gh/lrq3000/py3make
-.. |Codacy-Grade| image:: https://api.codacy.com/project/badge/Grade/1f1dab515f294a05af8fc45e200660e5
-   :target: https://www.codacy.com/app/lrq3000/py3make/dashboard
+.. |Codacy-Grade| image:: https://app.codacy.com/project/badge/Grade/64b870375f664419b5f2a0a956006db7
+   :target: https://app.codacy.com/gh/lrq3000/py3make/dashboard
 .. |GitHub-Status| image:: https://img.shields.io/github/tag/lrq3000/py3make.svg?maxAge=86400&logo=github&logoColor=white
    :target: https://github.com/lrq3000/py3make/releases
 .. |GitHub-Forks| image:: https://img.shields.io/github/forks/lrq3000/py3make.svg?logo=github&logoColor=white
