@@ -65,7 +65,7 @@ testrst:
 testcoverage:
 	# This is the preferred way to run the tests since Python 3.10
 	@+make coverclean
-	pip install -e . --upgrade
+	@+make installdev
 	# Run the tests
 	# With PyTest, it is now necessary to first install the python module so that it is found (--cov=<module>)
 	coverage run --branch -m pytest -v
@@ -74,7 +74,7 @@ testcoverage:
 testcoveragexdist:
 	# This parallelizes tests to make them run faster, thanks to pytest-xdist
 	@+make coverclean
-	@+make installdevpep517
+	@+make installdev
 	# Run the tests
 	# With PyTest, it is now necessary to first install the python module so that it is found (--cov=<module>)
 	coverage run --branch -m pytest -n auto -v

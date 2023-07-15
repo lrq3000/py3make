@@ -123,18 +123,16 @@ required_plugins = "pytest-cov"
 branch = true
 relative_files = true
 include = [
-    "*/_pymake.py",
-	"*/_main.py",
+    "*/*.py",
     ]
 
 [tool.coverage.paths]
-source = ["src/py3make"]
+source = ["src"]
 
 [tool.coverage.report]  # Beware: you need to delete .coveragerc if you have one, otherwise .coveragerc will take precedence!
 show_missing = true
 include = [
-    "*/_pymake.py",
-	"*/_main.py",
+    "*/*.py",
 ]
 omit = [
     "*/python?.?/*",
