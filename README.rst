@@ -145,8 +145,8 @@ The main developers, ranked by surviving lines of code
 
 We are grateful for all |GitHub-Contributions|!
 
-.. |Build-Status| image:: https://img.shields.io/travis/lrq3000/py3make/master.svg?logo=travis
-   :target: https://travis-ci.org/lrq3000/py3make
+.. |Build-Status| https://github.com/lrq3000/py3make/actions/workflows/ci-build.yml/badge.svg?event=push
+    :target: https://github.com/lrq3000/py3make/actions/workflows/ci-build.yml
 .. |Coverage-Status| image:: https://coveralls.io/repos/lrq3000/py3make/badge.svg?branch=master
    :target: https://coveralls.io/github/lrq3000/py3make
 .. |Branch-Coverage-Status| image:: https://codecov.io/gh/lrq3000/py3make/branch/master/graph/badge.svg
