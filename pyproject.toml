@@ -20,7 +20,7 @@ requires-python = ">=3.7"
 license = {text = "Mozilla Public License 2.0"} # { file = "LICENSE" }
 keywords = ["make", "makefile", "gnumake", "gnu", "console", "terminal", "cli", "py3make", "pymake", "py-make"]
 classifiers = [
-    'Development Status :: 3 - Alpha',
+    'Development Status :: 5 - Production/Stable',
     'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
     'Environment :: Console',
 	'Operating System :: MacOS :: MacOS X',
