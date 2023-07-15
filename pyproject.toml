@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MPL-2.0
+# SPDX-License-Identifier: MIT
 
 [build-system]
 # never uppercap requirements unless we have evidence it won't work https://iscinumpy.dev/post/bound-version-constraints/ 
@@ -6,7 +6,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]  # beware if using setuptools: setup.py still gets executed, and even if pyproject.toml fields take precedence, if there is any code error in setup.py, building will fail!
-name = "py-make"
+name = "py3make"
 dynamic = ["version"]  # see PEP 440 https://peps.python.org/pep-0440/#pre-releases and https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
 description = "Makefile execution powered by pure Python"
 authors = [
@@ -18,7 +18,7 @@ maintainers = [
     ]
 requires-python = ">=3.7"
 license = {text = "Mozilla Public License 2.0"} # { file = "LICENSE" }
-keywords = ["make", "makefile", "gnumake", "gnu", "console", "terminal", "cli", "pymake", "py-make"]
+keywords = ["make", "makefile", "gnumake", "gnu", "console", "terminal", "cli", "py3make", "pymake", "py-make"]
 classifiers = [
     'Development Status :: 3 - Alpha',
     'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
@@ -58,15 +58,15 @@ dependencies = [
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "pymake._version.__version__"}  # see: https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
+version = {attr = "py3make._version.__version__"}  # see: https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
 
 [project.urls]
-Homepage = "https://github.com/tqdm/pymake"
-Documentation = "https://github.com/tqdm/pymake/blob/master/README.md"
-"Source" = "https://github.com/tqdm/pymake"
-Tracker = "https://github.com/tqdm/pymake/issues"
-Download = "https://github.com/tqdm/pymake/releases"
-#Changelog = "https://url/changelog"
+Homepage = "https://github.com/lrq3000/py3make"
+Documentation = "https://github.com/lrq3000/py3make/blob/master/README.md"
+"Source" = "https://github.com/lrq3000/py3make"
+Tracker = "https://github.com/lrq3000/py3make/issues"
+Download = "https://github.com/lrq3000/py3make/releases"
+Changelog = "https://allmychanges.com/p/python/py3make/"
 
 [project.optional-dependencies]
 test = [  # minimum dependencies to run tests
@@ -82,11 +82,11 @@ testmeta = [  # dependencies to test meta-data
 ]
 
 [project.readme]
-file = "README.md"
-content-type = "text/markdown"
+file = "README.rst"
+content-type = "text/x-rst"
 
 [project.scripts]
-pymake = "pymake._main:main"
+py3make = "py3make._main:main"
 
 #[tool.setuptools]
 #package-dir = {"" = "src"}
@@ -94,7 +94,7 @@ pymake = "pymake._main:main"
 [tool.setuptools.packages.find]
 # IMPORTANT: systematically delete `src/<project.name>.egg-info` folder before rebuilding, otherwise the list of included files will not get updated (it's in `SOURCES.txt` file in this folder)
 where = ["."]
-include = ["pymake*"]
+include = ["py3make*"]
 #namespaces = true  # already the default
 
 [tool.setuptools.package-data]
@@ -127,7 +127,7 @@ include = [
     ]
 
 [tool.coverage.paths]
-source = ["pymake"]
+source = ["py3make"]
 
 [tool.coverage.report]  # Beware: you need to delete .coveragerc if you have one, otherwise .coveragerc will take precedence!
 show_missing = true

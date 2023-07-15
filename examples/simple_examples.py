@@ -1,4 +1,4 @@
-import pymake
+import py3make
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
 
     Or just install py-make and run pymake in this directory.
     """
-    pymake.main()
+    py3make.main()
 
 
 if __name__ == "__main__":

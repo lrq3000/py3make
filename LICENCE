@@ -9,9 +9,11 @@ in reverse chronological order:
   MPLv2.0 2016-2019 (c) Casper da Costa-Luis
   [casperdcl](https://github.com/casperdcl).
 * lines of code last modified by Stephen Karl Larroque:
-  MIT 2015 (c) Stephen Karl Larroque
+  MIT 2015-2023 (c) Stephen Karl Larroque
   [LRQ3000](https://github.com/LRQ3000).
 
+Note: the git history does not reflect the true last author of each LOC,
+instead, look at the https://github.com/tqdm/tqdm history.
 
 Mozilla Public Licence (MPL) v. 2.0 - Exhibit A
 -----------------------------------------------

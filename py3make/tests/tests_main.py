@@ -1,7 +1,7 @@
 import sys
 import subprocess
 from os import path
-from pymake import main, PymakeKeyError, PymakeTypeError
+from py3make import main, PymakeKeyError, PymakeTypeError
 
 dn = path.dirname
 fname = path.join(dn(dn(dn(path.abspath(__file__)))),

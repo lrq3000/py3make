@@ -1,7 +1,16 @@
+# This Makefile runs tests and builds the package to upload to pypi
+# To use this Makefile, pip install py3make
+# then do: py3make <command>
+# or: python.exe -m py3make <command>
+# You also need to pip install also other required modules: `pip install flake8 coverage twine pytest pytest-cov validate-pyproject[all] pytest-xdist rstcheck` , or simply `pip install --editable .[test]`
+# Up to Python 3.9 included, nosetests was used, but from 3.10 onward, support for it was dropped since it is not maintained anymore, so that pytest and pytest-cov are used instead.
+# Then, cd to this folder, and type `py3make -p` to list all commands, then `py3make <command>` to run the related entry.
+# To test on multiple Python versions, install them, install also the C++ redistributables for each (so that Cython works), and then type `py3make testtox`.
+# CRITICAL NOTE: if you get a "FileNotFoundError" exception when trying to call @+python or @+make, then it is because you used spaces instead of a hard TAB character to indent! TODO: bugfix this. It happens only for @+ commands and for those after the first command (if the @+ command with spaces as indentation is the first and only statement in a command, it works!)
+#
 # IMPORTANT: for compatibility with `python setup.py make [alias]`, ensure:
 # 1. Every alias is preceded by @[+]make (eg: @make alias)
 # 2. A maximum of one @make alias or command per line
-# see: https://github.com/tqdm/py-make/issues/1
 
 .PHONY:
 	alltests
@@ -27,7 +36,7 @@
 	run
 
 help:
-	@python setup.py make -p
+	@+make -p
 
 alltests:
 	@+make testcoverage
