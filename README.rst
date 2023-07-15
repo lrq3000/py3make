@@ -174,8 +174,6 @@ We are grateful for all |GitHub-Contributions|!
    :target: https://github.com/lrq3000/py3make/pulse
 .. |PyPI-Status| image:: https://img.shields.io/pypi/v/py3make.svg
    :target: https://pypi.org/project/py3make
-.. |PyPI-Downloads| image:: https://img.shields.io/pypi/dm/py3make.svg?label=pypi%20downloads&logo=python&logoColor=white
-   :target: https://pypi.org/project/py3make
 .. |PyPI-Versions| image:: https://img.shields.io/pypi/pyversions/py3make.svg?logo=python&logoColor=white
    :target: https://pypi.org/project/py3make
 .. |PyPI-Downloads| image:: https://img.shields.io/pypi/dm/py3make.svg?label=pypi%20downloads&logo=python&logoColor=white
