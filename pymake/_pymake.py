@@ -8,7 +8,7 @@ import io
 import re
 from subprocess import check_call
 
-__author__ = {"github.com/": ["casperdcl", "lrq3000"]}
+__author__ = {"github.com/": ["lrq3000", "casperdcl"]}
 __all__ = ['PymakeTypeError', 'PymakeKeyError',
            'parse_makefile_aliases', 'execute_makefile_commands']
 
@@ -80,7 +80,6 @@ def parse_makefile_aliases(filepath):
     # If this is not possible because an alias points to another alias,
     # then stop and put the current alias back in the queue to be
     # processed again later (bottom-up).
-
     aliases_todo = list(commands.keys())
     commands_new = {}
     while aliases_todo:

@@ -6,7 +6,7 @@ Options:
   -h, --help     Print this help and exit
   -v, --version  Print version and exit
   -s, --silent   Don't echo commands (quiet)
-  -p, --print-data-base  Print internal database
+  -p, --print-data-base  Print internal database (list available subcommands)
   -n, --just-print       Don't actually run any commands; just print them
                          (dry-run, recon)
   -i, --ignore-errors    Ignore errors from commands
@@ -21,11 +21,16 @@ Options:
   -d, --debug-trace      Print lots of debugging information (-D NOTSET)
   -f=<file>, --file=<file>
                  Read <file> as a (makefile) [default: Makefile]
+
+Example:
+  pymake -p             Lists all available commands
+  pymake build          Activates the "build" command in the current Makefile (if available)
 """
 from __future__ import absolute_import
 from __future__ import print_function
 from ._pymake import parse_makefile_aliases, execute_makefile_commands, \
     PymakeKeyError
+from ._utils import shlex
 from ._version import __version__  # NOQA
 from docopt import docopt
 import sys
@@ -35,7 +40,17 @@ __all__ = ["main"]
 
 
 def main(argv=None):
+    if argv is None: # if argv is empty, fetch from the commandline
+        argv = sys.argv[1:]
+    elif isinstance(argv, _str): # else if argv is supplied but it's a simple string, we need to parse it to a list of arguments before handing to argparse or any other argument parser
+        argv = shlex.split(argv) # Parse string just like argv using shlex
+    if argv is None or len(argv) == 0:
+        argv = ["-h"]
+
+    # Parse
     opts = docopt(__doc__, version=__version__, argv=argv)
+
+    # Enable debug if specified
     if opts.pop('--debug-trace', False):
         opts['--debug'] = "NOTSET"
     log.basicConfig(level=getattr(log, opts['--debug'], log.INFO),
@@ -47,6 +62,7 @@ def main(argv=None):
     # Parse the makefile, substitute the aliases and extract the commands
     commands, default_alias = parse_makefile_aliases(fpath)
 
+    # List commands
     if opts['--print-data-base']:
         print("List of detected aliases:")
         print('\n'.join(alias for alias in sorted(commands.keys())))
@@ -67,4 +83,6 @@ def main(argv=None):
                                  target + "'. Stop.")
 
 
+# Document the parser using this python script’s docstring
+# (docopts uses that to define the commandline parser)
 main.__doc__ = __doc__
