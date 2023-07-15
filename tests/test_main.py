@@ -4,7 +4,7 @@ from os import path
 from py3make import main, PymakeKeyError, PymakeTypeError
 
 dn = path.dirname
-fname = path.join(dn(dn(dn(path.abspath(__file__)))),
+fname = path.join(dn(dn(path.abspath(__file__))),
                   "examples", "Makefile").replace('\\', '/')
 
 
@@ -16,7 +16,7 @@ def _sh(*cmd, **kwargs):
 def test_main():
     """Test execution"""
     res = _sh(sys.executable, '-c', ('\
-              import pymake; pymake.main(["-f", "%s"])' % fname).strip(),
+              import py3make; py3make.main(["-f", "%s"])' % fname).strip(),
               stderr=subprocess.STDOUT)
 
     # actual test:
