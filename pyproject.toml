@@ -17,7 +17,7 @@ maintainers = [
     {name = "tqdm developers", email = "python.tqdm@gmail.com"},
     ]
 requires-python = ">=3.7"
-license = {text = "Mozilla Public License 2.0"} # { file = "LICENSE" }
+license = {text = "MIT License"} # { file = "LICENSE" }
 keywords = ["make", "makefile", "gnumake", "gnu", "console", "terminal", "cli", "py3make", "pymake", "py-make"]
 classifiers = [
     'Development Status :: 5 - Production/Stable',
