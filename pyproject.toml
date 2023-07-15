@@ -72,6 +72,7 @@ Changelog = "https://allmychanges.com/p/python/py3make/"
 test = [  # minimum dependencies to run tests
     "pytest",
     "pytest-cov",
+	"coveralls",
 	"flake8",
 	"Flake8-pyproject",
 ]

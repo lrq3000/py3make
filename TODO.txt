@@ -1,1 +1,2 @@
+* @+make -p fails (and any other switches) for some reason, only @+make <subcommand> work.
 * Fix spaces (instead of tabs) making parsing choke in Makefile.

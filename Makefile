@@ -104,7 +104,7 @@ toxclean:
 
 installdev:
 	@+make prebuildclean
-	@+python -m pip install --upgrade --editable .[test] --verbose --use-pep517
+	@+python -m pip install --upgrade --editable .[test,testmeta] --verbose --use-pep517
 
 install:
 	@+make prebuildclean
